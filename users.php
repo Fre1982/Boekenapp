@@ -1,5 +1,5 @@
 <?php
-Class User {
+Class User extends db {
     //attributes
     private $user_id;
     private $voornaam;
