@@ -41,6 +41,8 @@ class boeken extends db {
             UPDATE boeken
             SET user_id = $user
             WHERE boek_id = $book";
+            $stmt= $this->conn->prepare($sql);
+            $stmt->execute();
         }else{
             echo "Dit boek is al uitgeleend";
         }
@@ -55,6 +57,8 @@ class boeken extends db {
             UPDATE boeken
             SET user_id = ''
             WHERE boek_id = $book";
+            $stmt= $this->conn->prepare($sql);
+            $stmt->execute();
         }
     }
 
