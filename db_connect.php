@@ -3,7 +3,7 @@
 class db
 {
     protected $host, $username, $password, $dbname;
-    private $conn;
+    protected $conn;
 
 
     public function __construct($host = "localhost", $username = "root", $password = "", $dbname = 'boekenapp')
