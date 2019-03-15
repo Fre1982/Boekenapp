@@ -2,12 +2,14 @@
 
 require_once 'boeken.class.php';
 require_once 'db_connect.php';
-if($_SERVER['REQUEST_METHOD']=== 'POST'){
-  $titel = empty($_POST['titel'])?'':($_POST['titel']);
-  $ISBNNummer = empty($_POST['isbn'])?'':($_POST['isbn']);
 
-$book = new boeken($titel, $ISBNNummer);
-$book->addBook();
+
+if($_SERVER['REQUEST_METHOD']=== 'POST'){
+  $titel = empty($_POST['titel']) ? '': ($_POST['titel']);
+  $ISBNNummer = empty($_POST['isbn']) ? '': ($_POST['isbn']);
+
+$book = new boeken();
+$book->addBook($titel, $ISBNNummer);
 }
 ?>
 
