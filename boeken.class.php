@@ -51,7 +51,6 @@ class boeken extends db {
     public function checkOut ($book){
         if ($this->User_id = ""){
             echo "Dit boek is niet uitgeleend";
-
         }else{
             $sql="
             UPDATE boeken
