@@ -47,8 +47,8 @@ include_once 'incl/header.php';
          </tr>
         </tbody>
       </table>
-      <button type="button" name="Toevoegen" onclick="window.location.href = 'add.php';">Toevoegen</button>
-      <button type="button" name="Hoofdmenu" onclick="window.location.href = '../index.php';">Hoofdmenu</button><br>
+      <a type="button" name="Toevoegen" href="add.php">Toevoegen</a>
+      <a type="button" name="Hoofdmenu" href="../index.php">Hoofdmenu</a><br>
     </div>
   </div>
 </div>

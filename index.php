@@ -1,6 +1,6 @@
 <?php
 require_once 'db_connect.php';
-$db1 = new db();
+$db1 = new db('localhost', 'root', '', 'boekenapp');
 $result = $db1->getAllData('boeken');
 //var_dump($result);
  ?>
@@ -25,7 +25,10 @@ $result = $db1->getAllData('boeken');
           <button type="button" name="gebruikers" onclick="window.location.href = 'users/users.php';">Gebruikers beheren</button><br>
           <button type="button" name="boeken">Boeken toevoegen</button><br>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d0732d094429d226d1cea91add4a6f5bc9f51679
           <table><thead>
             <th scope="row"><?php echo "Boek_id"?></th>
             <th scope="row"><?php echo "Titel"?></th>
