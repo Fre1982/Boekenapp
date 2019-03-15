@@ -24,6 +24,7 @@ $result = $db1->getAllData('boeken');
         <div class="lg-2 offset-5 text-center">
           <button type="button" name="gebruikers">Gebruikers toevoegen</button><br>
           <button type="button" name="boeken">Boeken toevoegen</button><br>
+        
           <table><thead>
             <th scope="row"><?php echo "Boek_id"?></th>
             <th scope="row"><?php echo "Titel"?></th>
