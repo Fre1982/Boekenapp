@@ -77,9 +77,9 @@ class boeken extends db {
       $stmt= $this->conn->prepare($sql);
       $stmt->execute();
 
-      if($this->conn->query($sql)===true){
+    //  if($this->conn->query($sql)===true){
         header('Location: index.php');
-      }
+      
 
     }
 
