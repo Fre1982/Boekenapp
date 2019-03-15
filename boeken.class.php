@@ -63,6 +63,7 @@ class boeken extends db {
     }
 
     public function addBook($titel, $ISBNNummer){
+
       //if($_SERVER['REQUEST_METHOD']=== 'POST'){
         //$titel = empty($_POST['titel'])?'':($_POST['titel']);
         //$ISBNNummer = empty($_POST['isbn'])?'':($_POST['isbn']);
@@ -76,7 +77,7 @@ class boeken extends db {
       $stmt= $this->conn->prepare($sql);
       $stmt->execute();
 
-      if($conn->query($sql)===true){
+      if($this->conn->query($sql)===true){
         header('Location: index.php');
       }
 
