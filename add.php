@@ -22,8 +22,10 @@ $book->addBook($titel, $ISBNNummer);
   <body>
     <div class="container">
       <form  action="" method="post">
-        <input type="text" name="titel" value="">
-        <input type="text" name="isbn" value="">
+        <label for="titel">Titel</label><br>
+        <input type="text" name="titel" value=""><br>
+        <label for="isbn">ISBN</label><br>
+        <input type="text" name="isbn" value=""><br>
         <button type="submit" name="submit">Uitvoeren</button>
       </form>
 
