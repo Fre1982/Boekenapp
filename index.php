@@ -22,7 +22,7 @@ $result = $db1->getAllData('boeken');
       <div class="row">
 
         <div class="lg-2 offset-5 text-center">
-          <button type="button" name="gebruikers">Gebruikers toevoegen</button><br>
+          <button type="button" name="gebruikers" onclick="window.location.href = 'users/users.php';">Gebruikers beheren</button><br>
           <button type="button" name="boeken">Boeken toevoegen</button><br>
         
           <table><thead>
